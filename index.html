@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+<script> 
+  var firebaseConfig = {
+    apiKey: "AIzaSyANPkhe-syaDtuxxgVOjgmoksXirbtzNbY",
+    authDomain: "todo-datebase.firebaseapp.com",
+    databaseURL: "https://todo-datebase.firebaseio.com",
+    projectId: "todo-datebase",
+    storageBucket: "todo-datebase.appspot.com",
+    messagingSenderId: "273820834283",
+    appId: "1:273820834283:web:3832f000ffca19831321ae",
+    measurementId: "G-0J1GH5SZN3"
+  };
+  firebase.initializeApp(firebaseConfig);
+//   var firestore = firebase.firestore();
+</script>
+
+<!--  making foam -->
+
+<div class="name">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="userName">
+
+</div>
+<div class="email">
+    <label for="Email">Email</label>
+    <input type="Email" name="Email" id="userEmail">
+
+</div>
+<div class="message">
+    <label for="Message">Message</label>
+    <textarea name="Message" id="userMessage"></textarea>
+
+</div>
+<br>
+<br>
+<button id="submit">Submit</button>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
